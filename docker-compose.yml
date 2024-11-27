@@ -1,0 +1,9 @@
+services:
+  web:
+    container_name: web_landing
+    build:
+      context: .  
+      dockerfile: Dockerfile 
+    restart: always
+    ports:
+      - "5575:3000"
